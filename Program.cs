@@ -51,13 +51,15 @@ public class Program
             BotConfig.ChannelID == TestConfig.ChannelID)
         {
             Console.WriteLine("Config file not completed!");
-            throw new Exception("Config file not complete!");
+            Console.ReadLine();
+            return;
         }
 
         if (BotConfig.UpdateInterval < 5)
         {
             Console.WriteLine("Update Interval must be at least 5 minutes!");
-            throw new Exception("Update Interval must be at least 5 minutes!");
+            Console.ReadLine();
+            return;
         }
 
         BotConfig.ServerChannels ??= new();
@@ -80,6 +82,7 @@ public class Program
         {
             Console.WriteLine($"Channel {BotConfig.ChannelID} not found!");
             Console.WriteLine(ex.Message);
+            Console.ReadLine();
             throw;
         }
 
