@@ -7,6 +7,7 @@
     <Nullable>disable</Nullable>
     <ApplicationIcon>phuerthann.ico</ApplicationIcon>
 	<AssemblyVersion>1.0.1</AssemblyVersion>
+	<ProductVersion>1.0.1</ProductVersion>
 	<Copyright>Copyright (c) 2022 Benjamin E. Iserman</Copyright>
   </PropertyGroup>
 
