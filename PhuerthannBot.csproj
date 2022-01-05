@@ -5,7 +5,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
+    <ApplicationIcon>phuerthann.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="phuerthann.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Discord.Net.Labs" Version="3.5.0" />
